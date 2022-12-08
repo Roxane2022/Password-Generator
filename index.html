@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="external2/bootstrap.css">
+    <!--<link rel="stylesheet" href="external2/bootstrap.css.map">-->
+    <link rel="stylesheet" href="styles.css">
+    <title>PassGen Cecile</title>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body bgcolor="#FFFFE0" text="#000000">
+
+
+    <div class="container-xl text-center">
+        <div class="row">
+            <div class="col-5 lefside">
+
+
+
+            </div>
+            <div class="col-7 middle">
+
+                <div>
+                    <h1>Password Generator </h1>
+                </div>
+
+                <table class="table" border="5" cellpadding="30" cellspacing="10">
+
+                    <tr>
+                        <td bgcolor="#C0C0C0">
+                            <div id="resultat"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#E0E0E0">
+                            <div id="middle" class="col-6 lefside">
+                                <form id="eingabeForm" action="action">
+                                    <!-- <label for="meineZahl">gib eine Zahl zwischen 0 und 100 ein und drückt auf "Start"</label><br><br>
+                                    <input type="number" id="meineZahl" name="meineZahl" min="0" max="99"><br><br>
+                                     min="0" max="99"><br><br>-->
+                                    <div id="message"></div>
+                                    <input type="button" value="generate passwort" onclick="generateString() ">
+
+                                    <button type="reset" value="reset" class="btnreset" onclick="resetAll();">Reset</button><br><br>
+                                    <label for="meineZahl"> Passwordlength</label><br>
+                                    <input type="number" id="meineZahl" name="meineZahl" min="7" max="18"><br><br>
+                                    <button type="button" value="save" id="savebtn" onclick="pwSpeichern()">save</button><br><br>
+                                </form>
+                                <div id="PasswordStore"> </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div id="linkeSeitContentArea" class="col-5 lefside">
+
+
+
+
+        <div>
+
+
+
+        </div>
+
+
+    </div>
+    <script src="passGen.js"></script>
+
+</body>
+
+</html>
